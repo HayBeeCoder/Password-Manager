@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Manager</title>
+    <style>
+        .container{
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        .row{
+            justify-content: flex-end;
+            margin: 15px 0;
+            display: flex;
+            gap: 30px;
+            align-items: center;
+
+        }
+        .row label{
+            font-weight: bold;
+        }
+        .row input{
+            flex-grow: 1;
+            padding: 8px;
+        }
+        button{
+            outline: none;
+            padding: 0.5em 2em;
+        }
+
+        .heading    {
+            text-align: center;
+        }
+
+       
+    </style>
+</head>
+<body>
+   <div class="container">
+    <h1 class="heading">Manager</h1> 
+    <form action=""> 
+        <div class="row">
+            <label for="">Website</label>
+            <input type="text">
+            <button>Search</button>
+        </div>
+        <div class="row">
+            <label for="">Email/Username</label>
+            <input type="text">
+        </div>
+        <div class="row">
+            <label for="">Password</label>
+            <input type="text">
+            <button>Generate Password</button>
+        </div>
+        <div class="row">
+            <button class="submit-btn" type="submit">Add</button>
+        </div>
+    </form>
+   </div>
+</body>
+</html>
